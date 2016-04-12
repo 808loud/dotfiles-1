@@ -1,9 +1,9 @@
 [user]
-	name = Adam Eivy
-	email = adam.eivy@disney.com
+	name = David Monson
+	email = david@808loud.com
 [github]
     # https://github.com/blog/180-local-github-config
-    user = atomantic
+    user = 808loud
 
     # in a few months, look into the include directive (after bug fixes)
     token = MOVEALONG
@@ -51,7 +51,8 @@
 	safecrlf = warn
 	# prevent crlf (then you will have to deal with the problem -- dos2unix, etc)
 	#safecrlf = true
-	editor = vim
+	#editor = vim
+	editor = nano
 	#editor = subl -w
 
 [alias]
@@ -184,7 +185,8 @@
 [branch]
     # Automatically set up pull to be --rebase
     # autosetuprebase = always
-
+    autosetupmerge = always
+    
 [credential]
     # cache creds (git help credential-cache)
 	helper = cache
@@ -192,7 +194,7 @@
 [filter "tabspace"]
 	clean = expand -t 4
 [push]
-	default = matching
+	default = simple
 [filter "media"]
 	required = true
 	clean = git media clean %f
@@ -201,3 +203,6 @@
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
 	required = true
+
+[help]
+    autocorrect = 5
