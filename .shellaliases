@@ -7,6 +7,9 @@
 #########################################
 # Commands to run apps
 
+# Update and serve jekyll pages
+alias jgo="bundle exec jekyll serve --watch"
+
 #########################################
 # Commands to change dirs
 alias to.temp='cd ${MYTEMP}'
