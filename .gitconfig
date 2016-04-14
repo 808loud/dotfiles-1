@@ -186,7 +186,8 @@
 [branch]
     # Automatically set up pull to be --rebase
     # autosetuprebase = always
-
+    autosetupmerge = always
+    
 [credential]
     # cache creds (git help credential-cache)
 	helper = cache
@@ -203,3 +204,6 @@
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
 	required = true
+
+[help]
+    autocorrect = 5
